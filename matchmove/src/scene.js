@@ -138,8 +138,8 @@ export function buildPlate(canvas) {
   ground.rotation.x = -Math.PI / 2; scene.add(ground);
 
   // ---- painted ground marks
-  const markMat = new THREE.MeshBasicMaterial({ color: 0xb9a9c4 });
-  const markMat2 = new THREE.MeshBasicMaterial({ color: 0xe0a04a });
+  const markMat = new THREE.MeshBasicMaterial({ color: 0xb9a9c4, polygonOffset: true, polygonOffsetFactor: -4, polygonOffsetUnits: -16 });
+  const markMat2 = new THREE.MeshBasicMaterial({ color: 0xe0a04a, polygonOffset: true, polygonOffsetFactor: -4, polygonOffsetUnits: -16 });
   const addMark = (x, z, w, d, mat = markMat, feat = true) => {
     const m = new THREE.Mesh(new THREE.PlaneGeometry(w, d), mat); m.rotation.x = -Math.PI / 2; m.position.set(x, 0.012, z); scene.add(m);
     if (feat) for (const sx of [-1, 1]) cand.push({ p: new THREE.Vector3(x + sx * w / 2, 0, z + d / 2), type: 'ground', row: 0 });
@@ -162,7 +162,7 @@ export function buildPlate(canvas) {
   const shadowTex = blob('rgba(4,3,10,0.85)', 'rgba(4,3,10,0)');
   const glowTex = blob('rgba(255,70,160,0.75)', 'rgba(255,70,160,0)');
   const addShadow = (parent, w, d, y = 0.02) => {
-    const m = new THREE.Mesh(new THREE.PlaneGeometry(w, d), new THREE.MeshBasicMaterial({ map: shadowTex, transparent: true, depthWrite: false }));
+    const m = new THREE.Mesh(new THREE.PlaneGeometry(w, d), new THREE.MeshBasicMaterial({ map: shadowTex, transparent: true, depthWrite: false, polygonOffset: true, polygonOffsetFactor: -6, polygonOffsetUnits: -24 }));
     m.rotation.x = -Math.PI / 2; m.position.y = y; parent.add(m); return m;
   };
 
@@ -245,7 +245,7 @@ export function buildPlate(canvas) {
   shard(0.15, 0.11, 0.38, 0.26, -0.33, 0.16, 0.16, 0.5, 0.2);
   shard(0.12, 0.09, 0.30, 0.2, 0.05, 0.36, 0.55, 0.05, 0.5);
   const cShadow = addShadow(scene, 2.0, 2.0, 0.025);
-  const cGlow = new THREE.Mesh(new THREE.PlaneGeometry(3.4, 3.4), new THREE.MeshBasicMaterial({ map: glowTex, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, opacity: 0.55 }));
+  const cGlow = new THREE.Mesh(new THREE.PlaneGeometry(3.4, 3.4), new THREE.MeshBasicMaterial({ map: glowTex, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, opacity: 0.55, polygonOffset: true, polygonOffsetFactor: -8, polygonOffsetUnits: -32 }));
   cGlow.rotation.x = -Math.PI / 2; cGlow.position.y = 0.03; scene.add(cGlow);
   const CRYSTAL_HOME = new THREE.Vector3(0, 0, 2.4);
 
@@ -255,7 +255,7 @@ export function buildPlate(canvas) {
     uZsrc: { value: new THREE.Vector2() }, uZdst: { value: new THREE.Vector2() }, uRmin: { value: new THREE.Vector2() }, uRsize: { value: new THREE.Vector2(1, 1) } };
   quadScene.add(new THREE.Mesh(new THREE.PlaneGeometry(2, 2), new THREE.ShaderMaterial({ uniforms: U, vertexShader: `varying vec2 vUv; void main(){ vUv = uv; gl_Position = vec4(position.xy, 0., 1.); }`, fragmentShader: LENS_FS, depthTest: false })));
 
-  const rtCam = new THREE.PerspectiveCamera(30, ASPECT, 0.1, 1500);
+  const rtCam = new THREE.PerspectiveCamera(30, ASPECT, 0.6, 1100);   // tight depth range: no z-fighting on ground decals in wide views
 
   function setCrystal(mode, camX, tp, drop) {
     const on = mode && mode !== 'none';
