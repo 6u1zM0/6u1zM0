@@ -1,0 +1,5 @@
+node_modules/
+out/seg/
+out/stills/
+out/concat.txt
+out/build.log

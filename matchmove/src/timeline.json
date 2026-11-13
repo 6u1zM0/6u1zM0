@@ -1,0 +1,608 @@
+[
+ {
+  "i": 0,
+  "s": 0.3,
+  "e": 1.695,
+  "say": "Something's wrong with this shot.",
+  "caps": [
+   {
+    "s": 0.3,
+    "e": 1.695,
+    "text": "Something's wrong with this shot.",
+    "hold": 2.045
+   }
+  ]
+ },
+ {
+  "i": 1,
+  "s": 2.3,
+  "e": 4.389,
+  "say": "The crystal is fake... and it's sliding.",
+  "caps": [
+   {
+    "s": 2.3,
+    "e": 4.389,
+    "text": "The crystal is fake... and it's sliding.",
+    "hold": 4.66
+   }
+  ]
+ },
+ {
+  "i": 2,
+  "s": 4.7,
+  "e": 5.525,
+  "say": "Now it isn't.",
+  "caps": [
+   {
+    "s": 4.7,
+    "e": 5.525,
+    "text": "Now it isn't.",
+    "hold": 5.86
+   }
+  ]
+ },
+ {
+  "i": 3,
+  "s": 5.9,
+  "e": 7.593,
+  "say": "Same shot. Same crystal.",
+  "caps": [
+   {
+    "s": 5.9,
+    "e": 7.593,
+    "text": "Same shot. Same crystal.",
+    "hold": 7.943
+   }
+  ]
+ },
+ {
+  "i": 4,
+  "s": 8.0,
+  "e": 11.871,
+  "say": "The only thing that changed: the software worked out where the camera was.",
+  "caps": [
+   {
+    "s": 8.0,
+    "e": 9.63,
+    "text": "The only thing that changed:",
+    "hold": 9.59
+   },
+   {
+    "s": 9.63,
+    "e": 11.871,
+    "text": "the software worked out where the camera was.",
+    "hold": 12.221
+   }
+  ]
+ },
+ {
+  "i": 5,
+  "s": 12.6,
+  "e": 14.519,
+  "say": "No measurements. Just pixels.",
+  "caps": [
+   {
+    "s": 12.6,
+    "e": 14.519,
+    "text": "No measurements. Just pixels.",
+    "hold": 14.869
+   }
+  ]
+ },
+ {
+  "i": 6,
+  "s": 15.0,
+  "e": 16.038,
+  "say": "This is matchmove.",
+  "caps": [
+   {
+    "s": 15.0,
+    "e": 16.038,
+    "text": "This is matchmove.",
+    "hold": 16.388
+   }
+  ]
+ },
+ {
+  "i": 7,
+  "s": 18.5,
+  "e": 19.49,
+  "say": "First, tracking.",
+  "caps": [
+   {
+    "s": 18.5,
+    "e": 19.49,
+    "text": "First, tracking.",
+    "hold": 19.84
+   }
+  ]
+ },
+ {
+  "i": 8,
+  "s": 20.3,
+  "e": 23.308,
+  "say": "The software picks out sharp, high-contrast details...",
+  "caps": [
+   {
+    "s": 20.3,
+    "e": 23.308,
+    "text": "The software picks out sharp, high-contrast details...",
+    "hold": 23.658
+   }
+  ]
+ },
+ {
+  "i": 9,
+  "s": 24.5,
+  "e": 26.71,
+  "say": "and follows each one, frame by frame.",
+  "caps": [
+   {
+    "s": 24.5,
+    "e": 26.71,
+    "text": "and follows each one, frame by frame.",
+    "hold": 27.06
+   }
+  ]
+ },
+ {
+  "i": 10,
+  "s": 30.5,
+  "e": 33.461,
+  "say": "Every detail becomes a two-D path across the screen.",
+  "caps": [
+   {
+    "s": 30.5,
+    "e": 32.351,
+    "text": "Every detail becomes a 2D path",
+    "hold": 32.311
+   },
+   {
+    "s": 32.351,
+    "e": 33.461,
+    "text": "across the screen.",
+    "hold": 33.811
+   }
+  ]
+ },
+ {
+  "i": 11,
+  "s": 39.0,
+  "e": 42.136,
+  "say": "When the camera moves, close objects sweep across the frame.",
+  "caps": [
+   {
+    "s": 39.0,
+    "e": 40.06,
+    "text": "When the camera moves,",
+    "hold": 40.02
+   },
+   {
+    "s": 40.06,
+    "e": 42.136,
+    "text": "close objects sweep across the frame.",
+    "hold": 42.486
+   }
+  ]
+ },
+ {
+  "i": 12,
+  "s": 44.2,
+  "e": 45.66,
+  "say": "Distant ones barely shift.",
+  "caps": [
+   {
+    "s": 44.2,
+    "e": 45.66,
+    "text": "Distant ones barely shift.",
+    "hold": 46.01
+   }
+  ]
+ },
+ {
+  "i": 13,
+  "s": 48.5,
+  "e": 50.631,
+  "say": "That difference in speed... is depth.",
+  "caps": [
+   {
+    "s": 48.5,
+    "e": 50.631,
+    "text": "That difference in speed... is depth.",
+    "hold": 50.981
+   }
+  ]
+ },
+ {
+  "i": 14,
+  "s": 58.5,
+  "e": 60.333,
+  "say": "But real lenses bend the image.",
+  "caps": [
+   {
+    "s": 58.5,
+    "e": 60.333,
+    "text": "But real lenses bend the image.",
+    "hold": 60.683
+   }
+  ]
+ },
+ {
+  "i": 15,
+  "s": 61.5,
+  "e": 64.046,
+  "say": "So before solving, the plate is undistorted.",
+  "caps": [
+   {
+    "s": 61.5,
+    "e": 64.046,
+    "text": "So before solving, the plate is undistorted.",
+    "hold": 64.396
+   }
+  ]
+ },
+ {
+  "i": 16,
+  "s": 65.5,
+  "e": 66.987,
+  "say": "Straight lines are straight again.",
+  "caps": [
+   {
+    "s": 65.5,
+    "e": 66.987,
+    "text": "Straight lines are straight again.",
+    "hold": 67.337
+   }
+  ]
+ },
+ {
+  "i": 17,
+  "s": 69.0,
+  "e": 70.714,
+  "say": "Skip this, and nothing lines up.",
+  "caps": [
+   {
+    "s": 69.0,
+    "e": 70.714,
+    "text": "Skip this, and nothing lines up.",
+    "hold": 71.064
+   }
+  ]
+ },
+ {
+  "i": 18,
+  "s": 74.4,
+  "e": 75.334,
+  "say": "Now, the solve.",
+  "caps": [
+   {
+    "s": 74.4,
+    "e": 75.334,
+    "text": "Now the solve.",
+    "hold": 75.684
+   }
+  ]
+ },
+ {
+  "i": 19,
+  "s": 76.2,
+  "e": 80.28,
+  "say": "The software guesses where every point is in three-D, and where the camera is.",
+  "caps": [
+   {
+    "s": 76.2,
+    "e": 78.353,
+    "text": "The software guesses where every point",
+    "hold": 78.313
+   },
+   {
+    "s": 78.353,
+    "e": 80.28,
+    "text": "is in 3D, and where the camera is.",
+    "hold": 80.63
+   }
+  ]
+ },
+ {
+  "i": 20,
+  "s": 81.6,
+  "e": 84.005,
+  "say": "It projects those guesses back onto the image...",
+  "caps": [
+   {
+    "s": 81.6,
+    "e": 84.005,
+    "text": "It projects those guesses back onto the image...",
+    "hold": 84.355
+   }
+  ]
+ },
+ {
+  "i": 21,
+  "s": 85.0,
+  "e": 86.672,
+  "say": "measures how far off they land...",
+  "caps": [
+   {
+    "s": 85.0,
+    "e": 86.672,
+    "text": "measures how far off they land...",
+    "hold": 87.022
+   }
+  ]
+ },
+ {
+  "i": 22,
+  "s": 87.5,
+  "e": 88.861,
+  "say": "and nudges everything.",
+  "caps": [
+   {
+    "s": 87.5,
+    "e": 88.861,
+    "text": "and nudges everything.",
+    "hold": 89.211
+   }
+  ]
+ },
+ {
+  "i": 23,
+  "s": 89.6,
+  "e": 90.683,
+  "say": "Again, and again.",
+  "caps": [
+   {
+    "s": 89.6,
+    "e": 90.683,
+    "text": "Again and again.",
+    "hold": 91.033
+   }
+  ]
+ },
+ {
+  "i": 24,
+  "s": 91.6,
+  "e": 93.668,
+  "say": "Until they sit right on top of the tracks.",
+  "caps": [
+   {
+    "s": 91.6,
+    "e": 92.609,
+    "text": "Until they sit right",
+    "hold": 92.569
+   },
+   {
+    "s": 92.609,
+    "e": 93.668,
+    "text": "on top of the tracks.",
+    "hold": 94.018
+   }
+  ]
+ },
+ {
+  "i": 25,
+  "s": 100.4,
+  "e": 102.188,
+  "say": "The solve also finds the lens.",
+  "caps": [
+   {
+    "s": 100.4,
+    "e": 102.188,
+    "text": "The solve also finds the lens.",
+    "hold": 102.538
+   }
+  ]
+ },
+ {
+  "i": 26,
+  "s": 103.3,
+  "e": 106.139,
+  "say": "Try the wrong focal length, and the scene stretches.",
+  "caps": [
+   {
+    "s": 103.3,
+    "e": 104.825,
+    "text": "Try the wrong focal length,",
+    "hold": 104.785
+   },
+   {
+    "s": 104.825,
+    "e": 106.139,
+    "text": "and the scene stretches.",
+    "hold": 106.489
+   }
+  ]
+ },
+ {
+  "i": 27,
+  "s": 107.0,
+  "e": 108.164,
+  "say": "The points drift off.",
+  "caps": [
+   {
+    "s": 107.0,
+    "e": 108.164,
+    "text": "The points drift off.",
+    "hold": 108.514
+   }
+  ]
+ },
+ {
+  "i": 28,
+  "s": 113.2,
+  "e": 116.126,
+  "say": "The real lens is the one where the error bottoms out.",
+  "caps": [
+   {
+    "s": 113.2,
+    "e": 114.22,
+    "text": "The real lens is the one",
+    "hold": 114.18
+   },
+   {
+    "s": 114.22,
+    "e": 116.126,
+    "text": "where the error bottoms out.",
+    "hold": 116.476
+   }
+  ]
+ },
+ {
+  "i": 29,
+  "s": 120.4,
+  "e": 124.67,
+  "say": "One catch: the solver doesn't know which way is up, or how big anything is.",
+  "caps": [
+   {
+    "s": 120.4,
+    "e": 122.389,
+    "text": "One catch: the solver doesn't know",
+    "hold": 122.349
+   },
+   {
+    "s": 122.389,
+    "e": 123.135,
+    "text": "which way is up,",
+    "hold": 123.095
+   },
+   {
+    "s": 123.135,
+    "e": 124.67,
+    "text": "or how big anything is.",
+    "hold": 125.02
+   }
+  ]
+ },
+ {
+  "i": 30,
+  "s": 126.2,
+  "e": 127.022,
+  "say": "So we tell it.",
+  "caps": [
+   {
+    "s": 126.2,
+    "e": 127.022,
+    "text": "So we tell it.",
+    "hold": 127.372
+   }
+  ]
+ },
+ {
+  "i": 31,
+  "s": 127.6,
+  "e": 128.508,
+  "say": "Pick the ground.",
+  "caps": [
+   {
+    "s": 127.6,
+    "e": 128.508,
+    "text": "Pick the ground.",
+    "hold": 128.858
+   }
+  ]
+ },
+ {
+  "i": 32,
+  "s": 130.3,
+  "e": 131.812,
+  "say": "Give it one real measurement.",
+  "caps": [
+   {
+    "s": 130.3,
+    "e": 131.812,
+    "text": "Give it one real measurement.",
+    "hold": 132.162
+   }
+  ]
+ },
+ {
+  "i": 33,
+  "s": 133.5,
+  "e": 135.836,
+  "say": "Now the camera lives in real-world space.",
+  "caps": [
+   {
+    "s": 133.5,
+    "e": 135.836,
+    "text": "Now the camera lives in real-world space.",
+    "hold": 136.186
+   }
+  ]
+ },
+ {
+  "i": 34,
+  "s": 138.4,
+  "e": 141.837,
+  "say": "Position, rotation and lens, for every single frame.",
+  "caps": [
+   {
+    "s": 138.4,
+    "e": 140.42,
+    "text": "Position, rotation and lens,",
+    "hold": 140.38
+   },
+   {
+    "s": 140.42,
+    "e": 141.837,
+    "text": "for every single frame.",
+    "hold": 142.187
+   }
+  ]
+ },
+ {
+  "i": 35,
+  "s": 143.0,
+  "e": 144.772,
+  "say": "Render the crystal through this camera...",
+  "caps": [
+   {
+    "s": 143.0,
+    "e": 144.772,
+    "text": "Render the crystal through this camera...",
+    "hold": 145.122
+   }
+  ]
+ },
+ {
+  "i": 36,
+  "s": 146.6,
+  "e": 147.77,
+  "say": "and it stops sliding.",
+  "caps": [
+   {
+    "s": 146.6,
+    "e": 147.77,
+    "text": "and it stops sliding.",
+    "hold": 148.12
+   }
+  ]
+ },
+ {
+  "i": 37,
+  "s": 148.6,
+  "e": 149.327,
+  "say": "It sticks.",
+  "caps": [
+   {
+    "s": 148.6,
+    "e": 149.327,
+    "text": "It sticks.",
+    "hold": 149.677
+   }
+  ]
+ },
+ {
+  "i": 38,
+  "s": 154.5,
+  "e": 156.75,
+  "say": "Next time: rotoscoping. See you there.",
+  "caps": [
+   {
+    "s": 154.5,
+    "e": 156.75,
+    "text": "Next time: rotoscoping. See you there.",
+    "hold": 157.1
+   }
+  ]
+ }
+]

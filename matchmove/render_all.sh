@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Full build: voice-over -> frames (parallel chunks) -> concat -> mux.   Usage: ./render_all.sh [chunk indices to (re)render...]
+set -euo pipefail
+cd "$(dirname "$0")"
+export NODE_PATH="${NODE_PATH:-$(npm root -g)}"
+CH=300; N=16; JOBS="${JOBS:-4}"
+mkdir -p out/seg
+[ -f audio/vo.wav ] || python3 src/make_vo.py af_heart 1.0
+LIST="${*:-$(seq 0 $((N-1)))}"
+echo $LIST | tr ' ' '\n' | xargs -P "$JOBS" -I{} sh -c 'node src/render.mjs range $(({}*'$CH')) $((({}+1)*'$CH')) out/seg/seg_$(printf %02d {}).mp4 > out/seg/log_{}.txt 2>&1'
+for i in $(seq 0 $((N-1))); do echo "file 'seg/seg_$(printf %02d $i).mp4'"; done > out/concat.txt
+ffmpeg -y -loglevel error -f concat -safe 0 -i out/concat.txt -i audio/vo.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -ar 48000 -ac 2 -movflags +faststart -t 160 out/matchmove_explainer.mp4
+ffprobe -v error -show_entries format=duration,size:stream=codec_name,width,height,r_frame_rate,nb_frames -of compact out/matchmove_explainer.mp4
