@@ -262,7 +262,7 @@ export function buildPlate(canvas) {
     crystal.visible = cShadow.visible = cGlow.visible = !!on;
     if (!on) return;
     let x = CRYSTAL_HOME.x, y = 0, z = CRYSTAL_HOME.z;
-    if (mode === 'slide') { x += 0.5 * camX + 0.3; y = 0.13 + 0.05 * Math.sin(tp * 2.3); z += 0.12 * Math.sin(tp * 1.1); }
+    if (mode === 'slide') { x += 0.35 * camX + 0.65; y = 0.22 + 0.07 * Math.sin(tp * 2.3); z += -0.6 + 0.12 * Math.sin(tp * 1.1); }
     y += drop || 0;
     crystal.position.set(x, y, z);
     cShadow.position.set(x, 0.025, z); cGlow.position.set(x, 0.03, z);
@@ -272,7 +272,7 @@ export function buildPlate(canvas) {
   }
   function crystalPos(mode, camX, tp, drop) {
     const v = CRYSTAL_HOME.clone();
-    if (mode === 'slide') { v.x += 0.5 * camX + 0.3; v.y = 0.13 + 0.05 * Math.sin(tp * 2.3); v.z += 0.12 * Math.sin(tp * 1.1); }
+    if (mode === 'slide') { v.x += 0.35 * camX + 0.65; v.y = 0.22 + 0.07 * Math.sin(tp * 2.3); v.z += -0.6 + 0.12 * Math.sin(tp * 1.1); }
     v.y += drop || 0; return v;
   }
 

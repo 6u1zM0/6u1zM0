@@ -3,3 +3,5 @@ out/seg/
 out/stills/
 out/concat.txt
 out/build.log
+out/*.mp4
+out/rev/

@@ -4,7 +4,8 @@ Fully procedural 1920×1080 / 30 fps explainer. Every frame is a pure function o
 
 | File | What it is |
 |---|---|
-| `out/matchmove_explainer.mp4` | Final video, H.264 + AAC voice-over (no music / SFX) |
+| `out/matchmove_explainer.mp4` | Final video (~9 Mb/s H.264 + AAC voice-over, no music / SFX). Not in git: build it with `render_all.sh` |
+| `out/matchmove_master.mp4` | High-bitrate master of the same render (also not in git) |
 | `out/matchmove_captions.srt` | Captions, same lines and timings as the burned-in ones |
 | `audio/vo.wav` | Voice-over on its own track (24 kHz mono, 160 s) |
 | `src/vo_script.json` | Voice-over lines, target start times, caption line breaks |

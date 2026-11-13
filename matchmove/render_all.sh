@@ -9,5 +9,7 @@ mkdir -p out/seg
 LIST="${*:-$(seq 0 $((N-1)))}"
 echo $LIST | tr ' ' '\n' | xargs -P "$JOBS" -I{} sh -c 'node src/render.mjs range $(({}*'$CH')) $((({}+1)*'$CH')) out/seg/seg_$(printf %02d {}).mp4 > out/seg/log_{}.txt 2>&1'
 for i in $(seq 0 $((N-1))); do echo "file 'seg/seg_$(printf %02d $i).mp4'"; done > out/concat.txt
-ffmpeg -y -loglevel error -f concat -safe 0 -i out/concat.txt -i audio/vo.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -ar 48000 -ac 2 -movflags +faststart -t 160 out/matchmove_explainer.mp4
+ffmpeg -y -loglevel error -f concat -safe 0 -i out/concat.txt -i audio/vo.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -ar 48000 -ac 2 -movflags +faststart -t 160 out/matchmove_master.mp4
+# delivery encode (the master keeps the grain at ~37 Mb/s)
+ffmpeg -y -loglevel error -i out/matchmove_master.mp4 -c:v libx264 -preset slow -crf 22 -maxrate 14M -bufsize 28M -pix_fmt yuv420p -g 60 -color_primaries bt709 -color_trc bt709 -colorspace bt709 -c:a copy -movflags +faststart out/matchmove_explainer.mp4
 ffprobe -v error -show_entries format=duration,size:stream=codec_name,width,height,r_frame_rate,nb_frames -of compact out/matchmove_explainer.mp4
